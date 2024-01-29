@@ -1,0 +1,21 @@
+.subtask-wrapper {
+    display: inline-flex;
+    border: 3px solid #fff;
+    padding: 20px;
+}
+
+.subtask-content {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}
+
+.subtask-title{
+    background-color: aquamarine;
+    position: relative;
+        top: 0;
+        left: 2%;
+        /* Adjust as needed */
+        transform: translateX(-50%);
+}

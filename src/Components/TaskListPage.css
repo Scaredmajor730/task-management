@@ -1,0 +1,37 @@
+.tasks{
+    display: inline-flex;
+    
+}
+.task-wrapper {
+    width: 50%;
+    float: left;
+    padding: 20px;
+    border: 2px solid red;
+}
+.input-wrapper{
+  width: fit-content;
+}
+.form-control{
+ width: 60%;
+}
+
+.input-wrapper button{
+ width: 15%;
+ background-color: red;
+}
+
+.ip{
+    width: 50%;
+        float: left;
+        padding: 20px;
+        border: 2px solid red;
+}
+
+
+.task-wrapper ul{
+    background-color: aqua;
+}
+
+.task-list-header{
+  background-color: blueviolet;
+}
