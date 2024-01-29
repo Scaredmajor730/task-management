@@ -77,8 +77,8 @@ function TaskDetailsPage() {
           </div>
           <div className="subtask-wrapper">
             <strong className="subtask-title">Subtasks:</strong>
-            {incompleteSubtasks.length > 0 && (
-              <div className="subtask-content-wrapper">
+            {incompleteSubtasks.length > -1 && (
+              <div className="subtask-content">
                 <h3 className="subtask-header">Incomplete Subtasks:</h3>
                 <ul>
                   {incompleteSubtasks.map((subtask, index) => (
@@ -108,8 +108,8 @@ function TaskDetailsPage() {
                 </ul>
               </div>
             )}
-            {completeSubtasks.length > 0 && (
-              <div className="subtask-wrapper">
+            {completeSubtasks.length > -1 && (
+              <div className="subtask-content">
                 <h3 className="subtask-header">Complete Subtasks:</h3>
                 <ul>
                   {completeSubtasks.map((subtask, index) => (
