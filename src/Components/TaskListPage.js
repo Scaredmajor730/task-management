@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { DndProvider, useDrag, useDrop } from "react-dnd";
 import { HTML5Backend } from "react-dnd-html5-backend";
 import TaskItem from "./TaskItem";
+import './TaskListPage.css';
 
 const TaskListPage = () => {
   const [tasks, setTasks] = useState([]);
@@ -73,13 +74,13 @@ const TaskListPage = () => {
 
   return (
     <DndProvider backend={HTML5Backend}>
-      <div className="pagewrapper">
-        <h2 className="tasklistheader">Task List</h2>
+      <div className="tasks">
+        <h2 className="task-list-header">Task List</h2>
 
         {/* Add Task Section */}
-        <div className="inputwrapper">
+        <div className="input-wrapper">
           <input
-            className="input"
+            className="ip"
             type="text"
             placeholder="Enter a new task"
             value={newTaskName}
@@ -91,9 +92,9 @@ const TaskListPage = () => {
         </div>
 
         {/* Incomplete Tasks Section */}
-        <div className="incompletetaskwrapper">
-          <h3 className="incompleteheader">Incomplete Tasks</h3>
-          <ul className="incompleteul">
+        <div className="task-wrapper-complete">
+          <h3 className="task-header">Incomplete Tasks</h3>
+          <ul>
             {Array.isArray(tasks) &&
               tasks
                 .filter((task) => !task.completed)
@@ -114,9 +115,9 @@ const TaskListPage = () => {
         </div>
 
         {/* Complete Tasks Section */}
-        <div className="completeclasswrapper">
-          <h3 className="completeheader">Complete Tasks</h3>
-          <ul className="completeul">
+        <div className="task-wrapper">
+          <h3 className="task-header">Complete Tasks</h3>
+          <ul >
             {Array.isArray(tasks) &&
               tasks
                 .filter((task) => task.completed)

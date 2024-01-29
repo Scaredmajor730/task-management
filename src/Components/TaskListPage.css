@@ -1,37 +1,68 @@
-.tasks{
-    display: inline-flex;
-    
+.tasks {
+    display: flex;
 }
+
 .task-wrapper {
-    width: 50%;
+    width: fit-content;
     float: left;
     padding: 20px;
     border: 2px solid red;
-}
-.input-wrapper{
-  width: fit-content;
-}
-.form-control{
- width: 60%;
+    margin-right: 20px;
+    /* Added margin for spacing between sections */
 }
 
-.input-wrapper button{
- width: 15%;
- background-color: red;
+.input-wrapper {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    /* Center input and button vertically */
 }
 
-.ip{
-    width: 50%;
-        float: left;
-        padding: 20px;
-        border: 2px solid red;
+.form-control {
+    width: 200px;
+    /* Adjusted width for input */
 }
 
+.input-wrapper button {
+    width: fit-content;
+    background-color: red;
+    margin-left: 10px;
+    /* Added margin between input and button */
+}
 
-.task-wrapper ul{
+.ip {
+    width: fit-content;
+    position: relative;
+    float: left;
+    border: 2px solid red;
+    padding: 20px;
+    margin-top: 20px;
+    /* Added margin from the top */
+}
+
+.task-wrapper-complete{
+    position: relative;
+    margin-top: auto;
+}
+.task-wrapper{
+    position: relative;
+    margin-top: auto;
+}
+
+.task-wrapper ul {
     background-color: aqua;
+    list-style: none;
+    /* Removed default list styling */
+    padding: 0;
+    /* Removed default padding */
 }
 
-.task-list-header{
-  background-color: blueviolet;
+.task-list-header {
+    background-color: blueviolet;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    padding: 10px;
+    /* Added padding for better visibility */
 }
