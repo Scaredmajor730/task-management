@@ -40,7 +40,9 @@ function LandingPage() {
         <div className="welcomeText">
           Hi! I'm Tasky, your personal React task tracker
         </div>
-        <button onClick={redirectToTaskList} className="btn">Enter TaskyWorld</button>
+        <button onClick={redirectToTaskList} className="btn">
+          Enter Tasky
+        </button>
       </div>
     </div>
   );
