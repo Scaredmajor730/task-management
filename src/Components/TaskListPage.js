@@ -80,7 +80,7 @@ const TaskListPage = () => {
         {/* Add Task Section */}
         <div className="input-wrapper">
           <input
-            className="ip"
+            className="form-control"
             type="text"
             placeholder="Enter a new task"
             value={newTaskName}
@@ -92,7 +92,7 @@ const TaskListPage = () => {
         </div>
 
         {/* Incomplete Tasks Section */}
-        <div className="task-wrapper-complete">
+        <div className="task-wrapper">
           <h3 className="task-header">Incomplete Tasks</h3>
           <ul>
             {Array.isArray(tasks) &&

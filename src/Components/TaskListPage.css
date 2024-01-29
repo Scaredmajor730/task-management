@@ -1,68 +1,32 @@
-.tasks {
-    display: flex;
+.tasks{
+    
+    background-color: aqua;
+    height: 50vw;
+    width: 80 vw;
 }
+
+.task-list-header{
+    background-color: green;
+}
+
+.input-wrapper{
+    position: relative;
+    height: 15vh;
+    width: 15vw;
+}
+
+.btn {
+    height: 50px;
+    width:50px;
+}
+
 
 .task-wrapper {
-    width: fit-content;
+    display: inline-flex;
+    border: 3px solid #fff;
+    padding: 20px;
+    width: 50%;
     float: left;
     padding: 20px;
     border: 2px solid red;
-    margin-right: 20px;
-    /* Added margin for spacing between sections */
-}
-
-.input-wrapper {
-    width: fit-content;
-    display: flex;
-    align-items: center;
-    /* Center input and button vertically */
-}
-
-.form-control {
-    width: 200px;
-    /* Adjusted width for input */
-}
-
-.input-wrapper button {
-    width: fit-content;
-    background-color: red;
-    margin-left: 10px;
-    /* Added margin between input and button */
-}
-
-.ip {
-    width: fit-content;
-    position: relative;
-    float: left;
-    border: 2px solid red;
-    padding: 20px;
-    margin-top: 20px;
-    /* Added margin from the top */
-}
-
-.task-wrapper-complete{
-    position: relative;
-    margin-top: auto;
-}
-.task-wrapper{
-    position: relative;
-    margin-top: auto;
-}
-
-.task-wrapper ul {
-    background-color: aqua;
-    list-style: none;
-    /* Removed default list styling */
-    padding: 0;
-    /* Removed default padding */
-}
-
-.task-list-header {
-    background-color: blueviolet;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    /* Full width */
-    padding: 10px;
-    /* Added padding for better visibility */
 }
